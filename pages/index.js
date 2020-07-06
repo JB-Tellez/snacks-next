@@ -72,7 +72,8 @@ class Home extends React.Component {
 
 export default Home
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+export async function getServerSideProps() {
 
     const response = await fetch(url);
     const snacks = await response.json();
