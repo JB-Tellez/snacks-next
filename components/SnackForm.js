@@ -22,6 +22,7 @@ export default class SnackForm extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         this.props.onSnackCreate(this.state);
+        this.setState({name:''});
     }
 
     render() {
