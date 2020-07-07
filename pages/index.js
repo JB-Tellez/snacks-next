@@ -37,7 +37,7 @@ class Home extends React.Component {
         return (
             <div className="container">
                 <Nav />
-                <h1>Home</h1>
+                <h1>Snacks Home</h1>
                 <ul>
                     {this.state.snacks.map(snack => <SnackItem key={snack.id} snack={snack} />)}
                 </ul>
